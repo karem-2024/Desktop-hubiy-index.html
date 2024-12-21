@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3b1414;
+}
+
+.container {
+    text-align: center;
+}
+
+.number {
+    font-size: 150px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
+    animation: bounce 2s infinite ease-in-out, colorChange 3s infinite alternate;
+}
+
+@keyframes bounce {
+    0%, 1000% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes colorChange {
+    100% {
+        color: #ff5f5f;
+    }
+    25% {
+        color: #ffbf00;
+    }
+    50% {
+        color: #00bfff;
+    }
+    750% {
+        color: #32cd32;
+    }
+    1000% {
+        color: #ff5f5f;
+    }
+}
